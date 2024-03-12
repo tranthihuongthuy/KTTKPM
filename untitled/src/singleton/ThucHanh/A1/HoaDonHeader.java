@@ -13,10 +13,10 @@ public class HoaDonHeader {
 
     @Override
     public String toString() {
-        return "HoaDonHeader{" +
-                "soHD='" + soHD + '\'' +
-                ", tenkhachhang='" + tenkhachhang + '\'' +
-                ", ngayBan='" + ngayBan + '\'' +
-                '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append(soHD).append("\t")
+                .append("Tên khách hàng: ").append(tenkhachhang).append("\t")
+                .append("Ngày bán: ").append(ngayBan);
+        return builder.toString();
     }
 }

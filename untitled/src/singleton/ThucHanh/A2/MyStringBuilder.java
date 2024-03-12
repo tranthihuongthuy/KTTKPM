@@ -7,7 +7,11 @@ public class MyStringBuilder {
         return this;
     }
     public MyStringBuilder addFloat(float f){
-        f += f;
+        s += f;
+        return this;
+    }
+    public MyStringBuilder addBool(boolean b){
+        s += b;
         return this;
     }
     @Override

@@ -14,11 +14,11 @@ public class CTHD {
 
     @Override
     public String toString() {
-        return "CTHD{" +
-                "sanPham='" + sanPham + '\'' +
-                ", soLuong=" + soLuong +
-                ", donGia=" + donGia +
-                ", chietkhau=" + chietkhau +
-                '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append(sanPham).append("\t")
+                .append("Số lượng: ").append(soLuong).append("\t")
+                .append("Đơn giá: ").append(donGia).append("\t")
+                .append("Chiết khấu: ").append(chietkhau);
+        return builder.toString();
     }
 }
